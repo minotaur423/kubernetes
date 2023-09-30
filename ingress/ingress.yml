@@ -7,7 +7,7 @@ spec:
   #To specify a default backend, uncomment the following lines:
   #defaultBackend:
   #  service:
-  #    name: echoheaders-default 
+  #  name: echoheaders-default 
   #    port:
   #      number: 80
   rules:
