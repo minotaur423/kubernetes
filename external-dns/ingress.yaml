@@ -7,7 +7,7 @@ metadata:
     kubernetes.io/ingress.class: k8s.io/ingress-nginx
 spec:
   rules:
-  - host: helloworld-v1.kubernetes.newtech.academy
+  - host: helloworld-v1.k8s.devops4tng.net
     http:
       paths:
       - path: /
@@ -17,7 +17,7 @@ spec:
             name: helloworld-v1
             port:
               number: 80
-  - host: helloworld-v2.kubernetes.newtech.academy
+  - host: helloworld-v2.k8s.devops4tng.net
     http:
       paths:
       - path: /

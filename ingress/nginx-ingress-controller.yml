@@ -50,10 +50,15 @@ spec:
           ports:
           - name: http
             containerPort: 80
+<<<<<<< HEAD
               # hostPort: 80
           - name: https
             containerPort: 443
               # hostPort: 443
+=======
+          - name: https
+            containerPort: 443
+>>>>>>> 0c0757232a2f2c6518b628452892ec040947b183
           livenessProbe:
             failureThreshold: 5
             httpGet:

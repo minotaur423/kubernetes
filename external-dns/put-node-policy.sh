@@ -5,10 +5,10 @@
 # Usage of kube2iam is recommended, but not yet implemented by default in kops
 #
 
-DEFAULT_REGION="eu-west-1"
+DEFAULT_REGION="us-east-1"
 AWS_REGION="${AWS_REGION:-${DEFAULT_REGION}}"
 
-NODE_ROLE="nodes.kubernetes.newtech.academy"
+NODE_ROLE="nodes.k8s.devops4tng.net"
 
 export AWS_REGION
 
