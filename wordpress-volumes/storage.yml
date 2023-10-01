@@ -1,8 +1,9 @@
-kind: StorageClass
 apiVersion: storage.k8s.io/v1
+kind: StorageClass
 metadata:
   name: standard
-provisioner: kubernetes.io/aws-ebs
+provisioner: home.lcl/external-nfs
 parameters:
-  type: gp2
-  zone: eu-west-1a
+  server: k8sr-master.home.lcl
+  path: /data
+  readOnly: "false"

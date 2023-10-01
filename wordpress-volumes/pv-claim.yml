@@ -2,11 +2,13 @@ kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: db-storage
-  annotations:
-    volume.beta.kubernetes.io/storage-class: "standard"
+  namespace: default
 spec:
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
       storage: 8Gi
+  storageClassName: ''
+  volumeMode: Filesystem
+  volumeName: wordpress-pv

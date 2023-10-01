@@ -78,5 +78,5 @@ spec:
       volumes:
       - name: uploads
         nfs:
-          server: eu-west-1a.fs-5714e89e.efs.eu-west-1.amazonaws.com
-          path: /
+          server: k8sr-master.home.lcl
+          path: /data/uploads
